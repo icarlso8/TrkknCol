@@ -1,0 +1,43 @@
+{
+  "prompts": [
+    {
+      "id": "copies",
+      "titulo": "Generar Copies Publicitarios",
+      "descripcion": "Crea copies persuasivos y atractivos para la campaña.",
+      "plantilla": "Genera 5 copies creativos y persuasivos haciendo uso de emojis, lenguaje directo y llamado a la acción claro, para la campaña '{{campaña}}' del producto '{{producto}}' del anunciante '{{anunciante}}' en el país 'Colombia', orientada al segmento '{{segmento}}' de la marca o línea de negocio '{{negocio}}'. Considera la descripción: '{{descripcion}}', la(s) audiencia(s) '{{audiencia}}' y los factores contextuales seleccionados para dicha(s) audiencia(s)'{{factores_contextuales_seleccion}}'. Los copies deben ser breves con menos de 50 caracteres, impactantes y adecuados al tono del marketing digital, incluye para cada copy, el enfoque, la descripción de la imagen adecuada para cada copy, las posibles variaciones de la imagen y un call to action corto con emojis. Al final deja notas adicionales respecto a la adaptación, segmentación, plataformas, entre otros aspectos que consideres importante resaltar."
+    },
+    {
+      "id": "insights",
+      "titulo": "Generar Insights",
+      "descripcion": "Devuelve un análisis estratégico basado en la campaña y la audiencia.",
+      "plantilla": "Eres un estratega de marketing. Analiza la campaña '{{campaña}}' de {{Anunciante}}, que promueve el producto {{producto}} en el segmento {{segmento}} dentro del negocio {{negocio}}. Se describe como: {{descripción}}. Está dirigida a la audiencia {{audiencia}} y condicionada por los factores contextuales {{factores_contextuales}}. Proporciona insights estratégicos y accionables."
+    },
+    {
+      "id": "competencia",
+      "titulo": "Análisis de Competencia",
+      "descripcion": "Ofrece un análisis comparativo con competidores del sector.",
+      "plantilla": "Realiza un análisis de la competencia para {{anunciante}} en el negocio {{negocio}}, específicamente sobre el producto {{producto}} y la campaña '{{campaña}}'. Considera el segmento {{segmento}}, la audiencia {{audiencia}} y los factores contextuales {{factores_contextuales_seleccion}}. Identifica oportunidades, amenazas y diferenciadores frente a competidores. Proporciona insights estratégicos sobre cómo posicionarse efectivamente en el mercado colombiano considerando estas variables."
+    },
+    {
+      "id": "tendencias",
+      "titulo": "Tendencias del Sector",
+      "descripcion": "Identifica tendencias actuales y relevantes en el sector del anunciante.",
+      "plantilla": "Investiga y describe las principales tendencias actuales en el sector {{negocio}} que afectan a empresas como {{anunciante}}, especialmente en campañas relacionadas con el producto {{producto}} y orientadas al segmento {{segmento}}. Considera la audiencia {{audiencia}}, la descripción de la campaña '{{campaña}}' y los factores contextuales {{factores_contextuales_seleccion}}. Incluye oportunidades emergentes para destacar, tendencias de consumo específicas para Colombia y recomendaciones prácticas para capitalizar estas tendencias en estrategias de marketing digital."
+    },
+    {
+      "id": "barra_insights",
+      "titulo": "Insights para Barra de Indicadores",
+      "descripcion": "Insights breves para mostrar en la barra de indicadores",
+      "plantilla": "Genera 20 insights con emojis (máximo 200 caracteres cada uno), que sean muy relevantes (NO superficiales) y sobre las NOTICIAS ACTUALIZADAS DE FUENTES CONFIABLES más importantes del sector al que pertenece el anunciante '{{anunciante}}' en el país 'Colombia'. Los insights deben ser datos interesantes, estadísticas relevantes o tendencias del sector y oportunidades de mejora respecto a la competencia en términos de los productos y servicios más demandados, temporadas de oferta y demanda. PARA CADA INSIGHT, INCLUYE SOLO EL NOMBRE DE LA FUENTE OFICIAL ENTRE PARÉNTESIS, usando el formato: [Texto del insight] (Fuente: NombreFuente). Usa fuentes confiables como Reuters, Bloomberg, Forbes, Portafolio, La República, Dinero, El Tiempo, y medios especializados del sector. Valida también avances tecnológicos, lanzammiento de series y temporadas en streaming, eventos deportivos importantes y el contenido que es tendencia y que requiere del uso de una buena red de internet para visualización de forma confortable."
+    }
+  ]
+}
+
+
+
+
+
+
+
+
+

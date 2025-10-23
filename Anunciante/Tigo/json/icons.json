@@ -1,0 +1,116 @@
+[
+  {
+    "id": "home",
+    "nombre": "home",
+    "nombreArchivo": "home.png",
+    "categoria": "Telco",
+    "ubicacion": "superior_derecha",
+    "restringido_a": ["Tigo"]
+  },
+  {
+    "id": "movil",
+    "nombre": "movil",
+    "nombreArchivo": "movil.png",
+    "categoria": "Telco",
+    "ubicacion": "superior_derecha",
+    "restringido_a": ["Tigo"]
+  },
+  {
+    "id": "potenciar_tu_plan",
+    "nombre": "potenciar_tu_plan",
+    "nombreArchivo": "potenciar_tu_plan.png",
+    "categoria": "Telco",
+    "ubicacion": "superior_derecha",
+    "restringido_a": ["Tigo"]
+  },
+  {
+    "id": "iniciar_maraton",
+    "nombre": "iniciar_maraton",
+    "nombreArchivo": "iniciar_maraton.png",
+    "categoria": "Telco",
+    "ubicacion": "superior_derecha",
+    "restringido_a": ["Tigo"]
+  },
+  {
+    "id": "activa_ahora",
+    "nombre": "activa_ahora",
+    "nombreArchivo": "activa_ahora.png",
+    "categoria": "Telco",
+    "ubicacion": "superior_derecha",
+    "restringido_a": ["Tigo"]
+  },
+  {
+    "id": "haz_tu_portabilidad",
+    "nombre": "haz_tu_portabilidad",
+    "nombreArchivo": "haz_tu_portabilidad.png",
+    "categoria": "Telco",
+    "ubicacion": "superior_derecha",
+    "restringido_a": ["Tigo"]
+  },
+  {
+    "id": "recarga_hoy",
+    "nombre": "recarga_hoy",
+    "nombreArchivo": "recarga_hoy.png",
+    "categoria": "Telco",
+    "ubicacion": "superior_derecha",
+    "restringido_a": ["Tigo"]
+  },
+  {
+    "id": "compra_tu_sim",
+    "nombre": "compra_tu_sim",
+    "nombreArchivo": "compra_tu_sim.png",
+    "categoria": "Telco",
+    "ubicacion": "superior_derecha",
+    "restringido_a": ["Tigo"]
+  },
+  {
+    "id": "icon_telco_01",
+    "nombre": "Ícono Telco 01",
+    "nombreArchivo": "icon_telco_01.png",
+    "categoria": "Telco",
+    "ubicacion": "superior_derecha",
+    "restringido_a": ["Tigo"]
+  },
+  {
+    "id": "icon_telco_02",
+    "nombre": "Ícono Telco 02",
+    "nombreArchivo": "icon_telco_02.png",
+    "categoria": "Telco",
+    "ubicacion": "superior_derecha",
+    "restringido_a": ["Tigo"]
+  },
+  {
+    "id": "icon_telco_03",
+    "nombre": "Ícono Telco 03",
+    "nombreArchivo": "icon_telco_03.png",
+    "categoria": "Telco",
+    "ubicacion": "superior_derecha",
+    "restringido_a": ["Tigo"]
+  },
+  {
+    "id": "icon_tv_01",
+    "nombre": "Ícono TV 01",
+    "nombreArchivo": "icon_tv_01.png",
+    "categoria": "Telco",
+    "ubicacion": "superior_derecha",
+    "restringido_a": ["Tigo"]
+  },
+  {
+    "id": "icon_tv_02",
+    "nombre": "Ícono TV 02",
+    "nombreArchivo": "icon_tv_02.png",
+    "categoria": "Telco",
+    "ubicacion": "superior_derecha",
+    "restringido_a": ["Tigo"]
+  },
+  {
+    "id": "icon_tv_03",
+    "nombre": "Ícono TV 03",
+    "nombreArchivo": "icon_tv_03.png",
+    "categoria": "Telco",
+    "ubicacion": "superior_derecha",
+    "restringido_a": ["Tigo"]
+  }
+]
+
+

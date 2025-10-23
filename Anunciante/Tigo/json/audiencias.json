@@ -1,0 +1,66 @@
+{
+  "hbomax": [
+    { "id": "fitness", "nombre": "Fitness", "emoji": "💪", "factores_disponibles": ["momento", "ciudad"] },
+    { "id": "homebody", "nombre": "Homebodys", "emoji": "🏠", "factores_disponibles": ["momento", "ciudad"] },
+    { "id": "mayortech", "nombre": "Mayortech", "emoji": "👵", "factores_disponibles": ["momento", "ciudad"] },
+    { "id": "office", "nombre": "Office", "emoji": "💼", "factores_disponibles": ["momento", "ciudad"] },
+    { "id": "partners", "nombre": "Partners", "emoji": "🤝", "factores_disponibles": ["momento", "ciudad"] },
+    { "id": "streaming", "nombre": "Streaming", "emoji": "📺", "factores_disponibles": ["momento", "ciudad"] }
+  ],
+  "win": [
+    { "id": "fitness", "nombre": "Fitness", "emoji": "💪", "factores_disponibles": ["momento", "ciudad"] },
+    { "id": "homebody", "nombre": "Homebodys", "emoji": "🏠", "factores_disponibles": ["momento", "ciudad"] },
+    { "id": "mayortech", "nombre": "Mayortech", "emoji": "👵", "factores_disponibles": ["momento", "ciudad"] },
+    { "id": "office", "nombre": "Office", "emoji": "💼", "factores_disponibles": ["momento", "ciudad"] },
+    { "id": "partners", "nombre": "Partners", "emoji": "🤝", "factores_disponibles": ["momento", "ciudad"] },
+    { "id": "streaming", "nombre": "Streaming", "emoji": "📺", "factores_disponibles": ["momento", "ciudad"] }
+  ],
+  "disneyplus": [
+    { "id": "fitness", "nombre": "Fitness", "emoji": "💪", "factores_disponibles": ["momento", "ciudad"] },
+    { "id": "homebody", "nombre": "Homebodys", "emoji": "🏠", "factores_disponibles": ["momento", "ciudad"] },
+    { "id": "mayortech", "nombre": "Mayortech", "emoji": "👵", "factores_disponibles": ["momento", "ciudad"] },
+    { "id": "office", "nombre": "Office", "emoji": "💼", "factores_disponibles": ["momento", "ciudad"] },
+    { "id": "partners", "nombre": "Partners", "emoji": "🤝", "factores_disponibles": ["momento", "ciudad"] },
+    { "id": "streaming", "nombre": "Streaming", "emoji": "📺", "factores_disponibles": ["momento", "ciudad"] }
+  ],
+  "pasate": [
+    { "id": "fitness", "nombre": "Fitness", "emoji": "💪", "factores_disponibles": ["momento", "ciudad"] },
+    { "id": "homebody", "nombre": "Homebodys", "emoji": "🏠", "factores_disponibles": ["momento", "ciudad"] },
+    { "id": "mayortech", "nombre": "Mayortech", "emoji": "👵", "factores_disponibles": ["momento", "ciudad"] },
+    { "id": "office", "nombre": "Office", "emoji": "💼", "factores_disponibles": ["momento", "ciudad"] },
+    { "id": "partners", "nombre": "Partners", "emoji": "🤝", "factores_disponibles": ["momento", "ciudad"] },
+    { "id": "streaming", "nombre": "Streaming", "emoji": "📺", "factores_disponibles": ["momento", "ciudad"] }
+  ],
+  "paquete": [
+    { "id": "fitness", "nombre": "Fitness", "emoji": "💪", "factores_disponibles": ["momento", "ciudad"] },
+    { "id": "homebody", "nombre": "Homebodys", "emoji": "🏠", "factores_disponibles": ["momento", "ciudad"] },
+    { "id": "mayortech", "nombre": "Mayortech", "emoji": "👵", "factores_disponibles": ["momento", "ciudad"] },
+    { "id": "office", "nombre": "Office", "emoji": "💼", "factores_disponibles": ["momento", "ciudad"] },
+    { "id": "partners", "nombre": "Partners", "emoji": "🤝", "factores_disponibles": ["momento", "ciudad"] },
+    { "id": "streaming", "nombre": "Streaming", "emoji": "📺", "factores_disponibles": ["momento", "ciudad"] }
+  ],
+    "pasapospago": [
+    { "id": "fitness", "nombre": "Fitness", "emoji": "💪", "factores_disponibles": ["momento", "ciudad"] },
+    { "id": "homebody", "nombre": "Homebodys", "emoji": "🏠", "factores_disponibles": ["momento", "ciudad"] },
+    { "id": "mayortech", "nombre": "Mayortech", "emoji": "👵", "factores_disponibles": ["momento", "ciudad"] },
+    { "id": "office", "nombre": "Office", "emoji": "💼", "factores_disponibles": ["momento", "ciudad"] },
+    { "id": "partners", "nombre": "Partners", "emoji": "🤝", "factores_disponibles": ["momento", "ciudad"] },
+    { "id": "streaming", "nombre": "Streaming", "emoji": "📺", "factores_disponibles": ["momento", "ciudad"] }
+  ],
+    "anteriorpremium": [
+    { "id": "antes", "nombre": "Campaña Anterior", "emoji": "⏮️", "factores_disponibles": "ninguno" }
+  ],
+    "anteriorprepago": [
+    { "id": "antes", "nombre": "Campaña Anterior", "emoji": "⏮️", "factores_disponibles": "ninguno" }
+  ],
+    "anteriorpospago": [
+    { "id": "antes", "nombre": "Campaña Anterior", "emoji": "⏮️", "factores_disponibles": "ninguno" }
+  ]
+}
+
+
+
+
+
+
+

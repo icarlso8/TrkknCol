@@ -1,0 +1,44 @@
+[
+  {
+    "id": "logo_tigo_blanco_v1",
+    "nombre": "Logo Tigo Blanco v1",
+    "nombreArchivo": "logo_tigo_blanco_v1.png",
+    "ubicacion": "superior_izquierda",
+    "restringido_a": ["Tigo"]
+  },
+  {
+    "id": "logo_tigo_blanco_v2",
+    "nombre": "Logo Tigo Blanco v2",
+    "nombreArchivo": "logo_tigo_blanco_v2.png",
+    "ubicacion": "superior_izquierda",
+    "restringido_a": ["Tigo"]
+  },
+  {
+    "id": "logo_tigo_blanco_v3",
+    "nombre": "Logo Tigo Blanco v3",
+    "nombreArchivo": "logo_tigo_blanco_v3.png",
+    "ubicacion": "superior_izquierda",
+    "restringido_a": ["Tigo"]
+  },
+  {
+    "id": "logo_tigo_negro_v1",
+    "nombre": "Logo Tigo Negro v1",
+    "nombreArchivo": "logo_tigo_negro_v1.png",
+    "ubicacion": "inferior_derecha",
+    "restringido_a": ["Tigo"]
+  },
+  {
+    "id": "logo_tigo_negro_v2",
+    "nombre": "Logo Tigo Negro v2",
+    "nombreArchivo": "logo_tigo_negro_v2.png",
+    "ubicacion": "inferior_derecha",
+    "restringido_a": ["Tigo"]
+  },
+   {
+    "id": "logo_tigo_negro_v3",
+    "nombre": "Logo Tigo Negro v3",
+    "nombreArchivo": "logo_tigo_negro_v3.png",
+    "ubicacion": "inferior_derecha",
+    "restringido_a": ["Tigo"]
+  }
+]

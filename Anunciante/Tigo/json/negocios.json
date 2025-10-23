@@ -1,0 +1,9 @@
+{
+  "home": [
+    { "id": "premium", "nombre": "💎 Premium" }
+  ],
+  "movil": [
+    { "id": "prepago", "nombre": "🔄 Prepago" },
+    { "id": "pospago", "nombre": "📶 Pospago" }
+  ]
+}

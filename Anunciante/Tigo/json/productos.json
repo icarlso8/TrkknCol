@@ -1,0 +1,21 @@
+{
+  "home": {
+    "premium": [
+      { "id": "hbomax", "nombre": "🎥 HBO Max" },
+      { "id": "win", "nombre": "⚽ WIN +" },
+      { "id": "disneyplus", "nombre": "🎬 Disney+" },
+      { "id": "anteriorpremium", "nombre": " ⏮️ Campaña anterior premium" }
+    ]
+  },
+  "movil": {
+    "prepago": [
+      { "id": "pasate", "nombre": "🔃 Pásate a Prepago Tigo" },
+      { "id": "paquete", "nombre": "📦 Compra de Paquetes Prepago Tigo" },
+      { "id": "anteriorprepago", "nombre": " ⏮️ Campaña anterior prepago" }
+    ],
+    "pospago": [
+      { "id": "pasapospago", "nombre": "📡 Pásate a Pospago Tigo" },
+      { "id": "anteriorpospago", "nombre": " ⏮️ Campaña anterior pospago" }
+    ]
+  }
+}
