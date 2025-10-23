@@ -1,0 +1,50 @@
+[
+  {
+    "id": "d1_greentag_new",
+    "nombre": "D1 Greentag New",
+    "nombreArchivo": "D1_greentag_new.png",
+    "categoria": "Retail",
+    "ubicacion": "superior_derecha",
+    "restringido_a": ["D1"]
+  },
+  {
+    "id": "d1_orangetag_lowprice",
+    "nombre": "D1 Orangetag Lowprice",
+    "nombreArchivo": "D1_orangetag_lowprice.png",
+    "categoria": "Retail",
+    "ubicacion": "superior_derecha",
+    "restringido_a": ["D1"]
+  },
+  {
+    "id": "d1_bluetag_renovated",
+    "nombre": "D1 Bluetag Renovated",
+    "nombreArchivo": "D1_bluetag_renovated.png",
+    "categoria": "Retail",
+    "ubicacion": "superior_derecha",
+    "restringido_a": ["D1"]
+  },
+  {
+    "id": "d1_lowprice_tag",
+    "nombre": "D1 lowprice Tag",
+    "nombreArchivo": "D1_lowprice_tag.png",
+    "categoria": "Retail",
+    "ubicacion": "superior_derecha",
+    "restringido_a": ["D1"]
+  },
+  {
+    "id": "d1_extra",
+    "nombre": "D1 Extra",
+    "nombreArchivo": "D1_Extra.png",
+    "categoria": "Retail",
+    "ubicacion": "superior_derecha",
+    "restringido_a": ["D1"]
+  },
+  {
+    "id": "d1_compralinea",
+    "nombre": "D1 CompraLinea",
+    "nombreArchivo": "D1_CompraLinea.png",
+    "categoria": "Retail",
+    "ubicacion": "superior_derecha",
+    "restringido_a": ["D1"]
+  }
+]

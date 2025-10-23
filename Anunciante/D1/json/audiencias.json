@@ -1,0 +1,101 @@
+{
+  "extraordinarios": [
+    { "id": "optimizador_estrategico", "nombre": "Optimizador Estratégico", "emoji": "♟️", "factores_disponibles": ["momento", "estado", "ubicacion", "estacionalidad"] },
+    { "id": "cazador_tesoros", "nombre": "Cazador de Tesoros", "emoji": "🧭", "factores_disponibles": ["momento", "estado", "ubicacion", "estacionalidad"] },
+    { "id": "solucionador_practico", "nombre": "Solucionador Práctico", "emoji": "⚡", "factores_disponibles": ["momento", "estado", "ubicacion", "estacionalidad"] },
+    { "id": "proveedor_familiar", "nombre": "Proveedor Familiar", "emoji": "🏡", "factores_disponibles": ["momento", "estado", "ubicacion", "estacionalidad"] }
+  ],
+  "congelados": [
+    { "id": "optimizador_estrategico", "nombre": "Optimizador Estratégico", "emoji": "♟️", "factores_disponibles": ["momento", "estado", "ubicacion", "estacionalidad"] },
+    { "id": "cazador_tesoros", "nombre": "Cazador de Tesoros", "emoji": "🧭", "factores_disponibles": ["momento", "estado", "ubicacion", "estacionalidad"] },
+    { "id": "solucionador_practico", "nombre": "Solucionador Práctico", "emoji": "⚡", "factores_disponibles": ["momento", "estado", "ubicacion", "estacionalidad"] },
+    { "id": "proveedor_familiar", "nombre": "Proveedor Familiar", "emoji": "🏡", "factores_disponibles": ["momento", "estado", "ubicacion", "estacionalidad"] }
+  ],
+  "alimentos_despensa": [
+    { "id": "optimizador_estrategico", "nombre": "Optimizador Estratégico", "emoji": "♟️", "factores_disponibles": ["momento", "estado", "ubicacion", "estacionalidad"] },
+    { "id": "cazador_tesoros", "nombre": "Cazador de Tesoros", "emoji": "🧭", "factores_disponibles": ["momento", "estado", "ubicacion", "estacionalidad"] },
+    { "id": "solucionador_practico", "nombre": "Solucionador Práctico", "emoji": "⚡", "factores_disponibles": ["momento", "estado", "ubicacion", "estacionalidad"] },
+    { "id": "proveedor_familiar", "nombre": "Proveedor Familiar", "emoji": "🏡", "factores_disponibles": ["momento", "estado", "ubicacion", "estacionalidad"] }
+  ],
+  "aseo_hogar": [
+    { "id": "optimizador_estrategico", "nombre": "Optimizador Estratégico", "emoji": "♟️", "factores_disponibles": ["momento", "estado", "ubicacion", "estacionalidad"] },
+    { "id": "cazador_tesoros", "nombre": "Cazador de Tesoros", "emoji": "🧭", "factores_disponibles": ["momento", "estado", "ubicacion", "estacionalidad"] },
+    { "id": "solucionador_practico", "nombre": "Solucionador Práctico", "emoji": "⚡", "factores_disponibles": ["momento", "estado", "ubicacion", "estacionalidad"] },
+    { "id": "proveedor_familiar", "nombre": "Proveedor Familiar", "emoji": "🏡", "factores_disponibles": ["momento", "estado", "ubicacion", "estacionalidad"] }
+  ],
+  "aseo_cuidado_personal": [
+    { "id": "optimizador_estrategico", "nombre": "Optimizador Estratégico", "emoji": "♟️", "factores_disponibles": ["momento", "estado", "ubicacion", "estacionalidad"] },
+    { "id": "cazador_tesoros", "nombre": "Cazador de Tesoros", "emoji": "🧭", "factores_disponibles": ["momento", "estado", "ubicacion", "estacionalidad"] },
+    { "id": "solucionador_practico", "nombre": "Solucionador Práctico", "emoji": "⚡", "factores_disponibles": ["momento", "estado", "ubicacion", "estacionalidad"] },
+    { "id": "proveedor_familiar", "nombre": "Proveedor Familiar", "emoji": "🏡", "factores_disponibles": ["momento", "estado", "ubicacion", "estacionalidad"] }
+  ],
+    "bebe": [
+    { "id": "optimizador_estrategico", "nombre": "Optimizador Estratégico", "emoji": "♟️", "factores_disponibles": ["momento", "estado", "ubicacion", "estacionalidad"] },
+    { "id": "cazador_tesoros", "nombre": "Cazador de Tesoros", "emoji": "🧭", "factores_disponibles": ["momento", "estado", "ubicacion", "estacionalidad"] },
+    { "id": "solucionador_practico", "nombre": "Solucionador Práctico", "emoji": "⚡", "factores_disponibles": ["momento", "estado", "ubicacion", "estacionalidad"] },
+    { "id": "proveedor_familiar", "nombre": "Proveedor Familiar", "emoji": "🏡", "factores_disponibles": ["momento", "estado", "ubicacion", "estacionalidad"] }
+  ],
+    "lacteos": [
+    { "id": "optimizador_estrategico", "nombre": "Optimizador Estratégico", "emoji": "♟️", "factores_disponibles": ["momento", "estado", "ubicacion", "estacionalidad"] },
+    { "id": "cazador_tesoros", "nombre": "Cazador de Tesoros", "emoji": "🧭", "factores_disponibles": ["momento", "estado", "ubicacion", "estacionalidad"] },
+    { "id": "solucionador_practico", "nombre": "Solucionador Práctico", "emoji": "⚡", "factores_disponibles": ["momento", "estado", "ubicacion", "estacionalidad"] },
+    { "id": "proveedor_familiar", "nombre": "Proveedor Familiar", "emoji": "🏡", "factores_disponibles": ["momento", "estado", "ubicacion", "estacionalidad"] }
+  ],
+    "bebe": [
+    { "id": "optimizador_estrategico", "nombre": "Optimizador Estratégico", "emoji": "♟️", "factores_disponibles": ["momento", "estado", "ubicacion", "estacionalidad"] },
+    { "id": "cazador_tesoros", "nombre": "Cazador de Tesoros", "emoji": "🧭", "factores_disponibles": ["momento", "estado", "ubicacion", "estacionalidad"] },
+    { "id": "solucionador_practico", "nombre": "Solucionador Práctico", "emoji": "⚡", "factores_disponibles": ["momento", "estado", "ubicacion", "estacionalidad"] },
+    { "id": "proveedor_familiar", "nombre": "Proveedor Familiar", "emoji": "🏡", "factores_disponibles": ["momento", "estado", "ubicacion", "estacionalidad"] }
+  ],
+    "mascotas": [
+    { "id": "optimizador_estrategico", "nombre": "Optimizador Estratégico", "emoji": "♟️", "factores_disponibles": ["momento", "estado", "ubicacion", "estacionalidad"] },
+    { "id": "cazador_tesoros", "nombre": "Cazador de Tesoros", "emoji": "🧭", "factores_disponibles": ["momento", "estado", "ubicacion", "estacionalidad"] },
+    { "id": "solucionador_practico", "nombre": "Solucionador Práctico", "emoji": "⚡", "factores_disponibles": ["momento", "estado", "ubicacion", "estacionalidad"] },
+    { "id": "proveedor_familiar", "nombre": "Proveedor Familiar", "emoji": "🏡", "factores_disponibles": ["momento", "estado", "ubicacion", "estacionalidad"] }
+  ],
+    "bebe": [
+    { "id": "optimizador_estrategico", "nombre": "Optimizador Estratégico", "emoji": "♟️", "factores_disponibles": ["momento", "estado", "ubicacion", "estacionalidad"] },
+    { "id": "cazador_tesoros", "nombre": "Cazador de Tesoros", "emoji": "🧭", "factores_disponibles": ["momento", "estado", "ubicacion", "estacionalidad"] },
+    { "id": "solucionador_practico", "nombre": "Solucionador Práctico", "emoji": "⚡", "factores_disponibles": ["momento", "estado", "ubicacion", "estacionalidad"] },
+    { "id": "proveedor_familiar", "nombre": "Proveedor Familiar", "emoji": "🏡", "factores_disponibles": ["momento", "estado", "ubicacion", "estacionalidad"] }
+  ],
+    "bebidas": [
+    { "id": "optimizador_estrategico", "nombre": "Optimizador Estratégico", "emoji": "♟️", "factores_disponibles": ["momento", "estado", "ubicacion", "estacionalidad"] },
+    { "id": "cazador_tesoros", "nombre": "Cazador de Tesoros", "emoji": "🧭", "factores_disponibles": ["momento", "estado", "ubicacion", "estacionalidad"] },
+    { "id": "solucionador_practico", "nombre": "Solucionador Práctico", "emoji": "⚡", "factores_disponibles": ["momento", "estado", "ubicacion", "estacionalidad"] },
+    { "id": "proveedor_familiar", "nombre": "Proveedor Familiar", "emoji": "🏡", "factores_disponibles": ["momento", "estado", "ubicacion", "estacionalidad"] }
+  ],
+    "lo_nuevo_tag_verde": [
+    { "id": "optimizador_estrategico", "nombre": "Optimizador Estratégico", "emoji": "♟️", "factores_disponibles": ["momento", "estado", "ubicacion", "estacionalidad"] },
+    { "id": "cazador_tesoros", "nombre": "Cazador de Tesoros", "emoji": "🧭", "factores_disponibles": ["momento", "estado", "ubicacion", "estacionalidad"] },
+    { "id": "solucionador_practico", "nombre": "Solucionador Práctico", "emoji": "⚡", "factores_disponibles": ["momento", "estado", "ubicacion", "estacionalidad"] },
+    { "id": "proveedor_familiar", "nombre": "Proveedor Familiar", "emoji": "🏡", "factores_disponibles": ["momento", "estado", "ubicacion", "estacionalidad"] }
+  ],
+    "precio_bajo_tag_naranja": [
+    { "id": "optimizador_estrategico", "nombre": "Optimizador Estratégico", "emoji": "♟️", "factores_disponibles": ["momento", "estado", "ubicacion", "estacionalidad"] },
+    { "id": "cazador_tesoros", "nombre": "Cazador de Tesoros", "emoji": "🧭", "factores_disponibles": ["momento", "estado", "ubicacion", "estacionalidad"] },
+    { "id": "solucionador_practico", "nombre": "Solucionador Práctico", "emoji": "⚡", "factores_disponibles": ["momento", "estado", "ubicacion", "estacionalidad"] },
+    { "id": "proveedor_familiar", "nombre": "Proveedor Familiar", "emoji": "🏡", "factores_disponibles": ["momento", "estado", "ubicacion", "estacionalidad"] }
+  ],
+    "renovado_tag_azul": [
+    { "id": "optimizador_estrategico", "nombre": "Optimizador Estratégico", "emoji": "♟️", "factores_disponibles": ["momento", "estado", "ubicacion", "estacionalidad"] },
+    { "id": "cazador_tesoros", "nombre": "Cazador de Tesoros", "emoji": "🧭", "factores_disponibles": ["momento", "estado", "ubicacion", "estacionalidad"] },
+    { "id": "solucionador_practico", "nombre": "Solucionador Práctico", "emoji": "⚡", "factores_disponibles": ["momento", "estado", "ubicacion", "estacionalidad"] },
+    { "id": "proveedor_familiar", "nombre": "Proveedor Familiar", "emoji": "🏡", "factores_disponibles": ["momento", "estado", "ubicacion", "estacionalidad"] }
+  ],
+    "otros": [
+    { "id": "optimizador_estrategico", "nombre": "Optimizador Estratégico", "emoji": "♟️", "factores_disponibles": ["momento", "estado", "ubicacion", "estacionalidad"] },
+    { "id": "cazador_tesoros", "nombre": "Cazador de Tesoros", "emoji": "🧭", "factores_disponibles": ["momento", "estado", "ubicacion", "estacionalidad"] },
+    { "id": "solucionador_practico", "nombre": "Solucionador Práctico", "emoji": "⚡", "factores_disponibles": ["momento", "estado", "ubicacion", "estacionalidad"] },
+    { "id": "proveedor_familiar", "nombre": "Proveedor Familiar", "emoji": "🏡", "factores_disponibles": ["momento", "estado", "ubicacion", "estacionalidad"] }
+  ],
+    "anteriorpremium": [
+    { "id": "antes", "nombre": "Campaña Anterior", "emoji": "⏮️", "factores_disponibles": "ninguno" }
+  ],
+    "anteriorprepago": [
+    { "id": "antes", "nombre": "Campaña Anterior", "emoji": "⏮️", "factores_disponibles": "ninguno" }
+  ],
+    "anteriorpospago": [
+    { "id": "antes", "nombre": "Campaña Anterior", "emoji": "⏮️", "factores_disponibles": "ninguno" }
+  ]
+}

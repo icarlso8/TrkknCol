@@ -1,0 +1,19 @@
+{
+  "retail_hard_discount": [
+    { "id": "tiendas_fisicas_distribucion_regional", "nombre": "📊 Tiendas físicas y distribución regional" },
+    { "id": "gestion_logistica_expansion_territorial", "nombre": "📊 Gestión logística y expansión territorial" },
+    { "id": "experiencia_tienda_proximidad", "nombre": "📊 Experiencia en tienda y proximidad" }
+  ],
+  "ecosistema_digital_crecimiento": [
+    { "id": "sitio_web_d1_app_d1", "nombre": "📊 Sitio Web D1 y App D1" },
+    { "id": "redes_sociales", "nombre": "📊 Redes Sociales" },
+    { "id": "domicilios_crm", "nombre": "📊 Domicilios / CRM" },
+    { "id": "inteligencia_datos_performance", "nombre": "📊 Inteligencia de datos y performance" }
+  ],
+  "marca_proposito_sostenibilidad": [
+    { "id": "reputacion_marca_institucional", "nombre": "📊 Reputación y Marca Institucional" },
+    { "id": "impacto_social", "nombre": "📊 Impacto Social" },
+    { "id": "comunidad_d1_lovers", "nombre": "📊 Comunidad D1 Lovers" }
+  ]
+}
+

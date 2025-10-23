@@ -1,0 +1,16 @@
+[
+  {
+    "id": "logo_d1_v1",
+    "nombre": "Logo D1 v1",
+    "nombreArchivo": "logo_d1_v1.png",
+    "ubicacion": "superior_izquierda",
+    "restringido_a": ["D1"]
+  },
+  {
+    "id": "logo_d1_v2",
+    "nombre": "Logo D1 v2",
+    "nombreArchivo": "logo_d1_v2.png",
+    "ubicacion": "superior_izquierda",
+    "restringido_a": ["D1"]
+  }
+]

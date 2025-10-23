@@ -1,0 +1,9 @@
+[
+  { "id": "300x600", "ancho": 300, "alto": 600, "nombre": "300 x 600" },
+  { "id": "320x480", "ancho": 320, "alto": 480, "nombre": "320 x 480" },
+  { "id": "300x250", "ancho": 300, "alto": 250, "nombre": "300 x 250" },
+  { "id": "320x50",  "ancho": 320, "alto": 50,  "nombre": "320 x 50"  },
+  { "id": "300x50",  "ancho": 300, "alto": 50,  "nombre": "300 x 50"  },
+  { "id": "160x600", "ancho": 160, "alto": 600, "nombre": "160 x 600" },
+  { "id": "728x90",  "ancho": 728, "alto": 90,  "nombre": "728 x 90"  }
+]

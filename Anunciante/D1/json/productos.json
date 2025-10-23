@@ -1,0 +1,162 @@
+{
+  "retail_hard_discount": {
+    "tiendas_fisicas_distribucion_regional": [
+      { "id": "extraordinarios", "nombre": "✨ Extraordinarios" },
+      { "id": "congelados", "nombre": "❄️ Congelados" },
+      { "id": "alimentos_despensa", "nombre": "🍅 Alimentos y despensa" },
+      { "id": "aseo_hogar", "nombre": "🧹 Aseo hogar" },
+      { "id": "aseo_cuidado_personal", "nombre": "🪥 Aseo y cuidado personal" },
+      { "id": "bebe", "nombre": "🍼 Bebé" },
+      { "id": "lacteos", "nombre": "🧀 Lácteos" },
+      { "id": "mascotas", "nombre": "🐾 Mascotas" },
+      { "id": "bebidas", "nombre": "🍾 Bebidas" },
+      { "id": "lo_nuevo_tag_verde", "nombre": "💚 Lo nuevo (tag verde)" },
+      { "id": "precio_bajo_tag_naranja", "nombre": "🧡 Precio bajo (tag naranja)" },
+      { "id": "renovado_tag_azul", "nombre": "💙 Renovado (tag azul)" },
+      { "id": "otros", "nombre": "🚬 Otros" }
+    ],
+    "gestion_logistica_expansion_territorial": [
+      { "id": "extraordinarios", "nombre": "✨ Extraordinarios" },
+      { "id": "congelados", "nombre": "❄️ Congelados" },
+      { "id": "alimentos_despensa", "nombre": "🍅 Alimentos y despensa" },
+      { "id": "aseo_hogar", "nombre": "🧹 Aseo hogar" },
+      { "id": "aseo_cuidado_personal", "nombre": "🪥 Aseo y cuidado personal" },
+      { "id": "bebe", "nombre": "🍼 Bebé" },
+      { "id": "lacteos", "nombre": "🧀 Lácteos" },
+      { "id": "mascotas", "nombre": "🐾 Mascotas" },
+      { "id": "bebidas", "nombre": "🍾 Bebidas" },
+      { "id": "lo_nuevo_tag_verde", "nombre": "💚 Lo nuevo (tag verde)" },
+      { "id": "precio_bajo_tag_naranja", "nombre": "🧡 Precio bajo (tag naranja)" },
+      { "id": "renovado_tag_azul", "nombre": "💙 Renovado (tag azul)" },
+      { "id": "otros", "nombre": "🚬 Otros" }
+    ],
+    "experiencia_tienda_proximidad": [
+      { "id": "extraordinarios", "nombre": "✨ Extraordinarios" },
+      { "id": "congelados", "nombre": "❄️ Congelados" },
+      { "id": "alimentos_despensa", "nombre": "🍅 Alimentos y despensa" },
+      { "id": "aseo_hogar", "nombre": "🧹 Aseo hogar" },
+      { "id": "aseo_cuidado_personal", "nombre": "🪥 Aseo y cuidado personal" },
+      { "id": "bebe", "nombre": "🍼 Bebé" },
+      { "id": "lacteos", "nombre": "🧀 Lácteos" },
+      { "id": "mascotas", "nombre": "🐾 Mascotas" },
+      { "id": "bebidas", "nombre": "🍾 Bebidas" },
+      { "id": "lo_nuevo_tag_verde", "nombre": "💚 Lo nuevo (tag verde)" },
+      { "id": "precio_bajo_tag_naranja", "nombre": "🧡 Precio bajo (tag naranja)" },
+      { "id": "renovado_tag_azul", "nombre": "💙 Renovado (tag azul)" },
+      { "id": "otros", "nombre": "🚬 Otros" }
+    ]
+  },
+  
+  "ecosistema_digital_crecimiento": {
+    "sitio_web_d1_app_d1": [
+      { "id": "extraordinarios", "nombre": "✨ Extraordinarios" },
+      { "id": "congelados", "nombre": "❄️ Congelados" },
+      { "id": "alimentos_despensa", "nombre": "🍅 Alimentos y despensa" },
+      { "id": "aseo_hogar", "nombre": "🧹 Aseo hogar" },
+      { "id": "aseo_cuidado_personal", "nombre": "🪥 Aseo y cuidado personal" },
+      { "id": "bebe", "nombre": "🍼 Bebé" },
+      { "id": "lacteos", "nombre": "🧀 Lácteos" },
+      { "id": "mascotas", "nombre": "🐾 Mascotas" },
+      { "id": "bebidas", "nombre": "🍾 Bebidas" },
+      { "id": "lo_nuevo_tag_verde", "nombre": "💚 Lo nuevo (tag verde)" },
+      { "id": "precio_bajo_tag_naranja", "nombre": "🧡 Precio bajo (tag naranja)" },
+      { "id": "renovado_tag_azul", "nombre": "💙 Renovado (tag azul)" },
+      { "id": "otros", "nombre": "🚬 Otros" }
+    ],
+    "redes_sociales": [
+      { "id": "extraordinarios", "nombre": "✨ Extraordinarios" },
+      { "id": "congelados", "nombre": "❄️ Congelados" },
+      { "id": "alimentos_despensa", "nombre": "🍅 Alimentos y despensa" },
+      { "id": "aseo_hogar", "nombre": "🧹 Aseo hogar" },
+      { "id": "aseo_cuidado_personal", "nombre": "🪥 Aseo y cuidado personal" },
+      { "id": "bebe", "nombre": "🍼 Bebé" },
+      { "id": "lacteos", "nombre": "🧀 Lácteos" },
+      { "id": "mascotas", "nombre": "🐾 Mascotas" },
+      { "id": "bebidas", "nombre": "🍾 Bebidas" },
+      { "id": "lo_nuevo_tag_verde", "nombre": "💚 Lo nuevo (tag verde)" },
+      { "id": "precio_bajo_tag_naranja", "nombre": "🧡 Precio bajo (tag naranja)" },
+      { "id": "renovado_tag_azul", "nombre": "💙 Renovado (tag azul)" },
+      { "id": "otros", "nombre": "🚬 Otros" }
+    ],
+    "domicilios_crm": [
+      { "id": "extraordinarios", "nombre": "✨ Extraordinarios" },
+      { "id": "congelados", "nombre": "❄️ Congelados" },
+      { "id": "alimentos_despensa", "nombre": "🍅 Alimentos y despensa" },
+      { "id": "aseo_hogar", "nombre": "🧹 Aseo hogar" },
+      { "id": "aseo_cuidado_personal", "nombre": "🪥 Aseo y cuidado personal" },
+      { "id": "bebe", "nombre": "🍼 Bebé" },
+      { "id": "lacteos", "nombre": "🧀 Lácteos" },
+      { "id": "mascotas", "nombre": "🐾 Mascotas" },
+      { "id": "bebidas", "nombre": "🍾 Bebidas" },
+      { "id": "lo_nuevo_tag_verde", "nombre": "💚 Lo nuevo (tag verde)" },
+      { "id": "precio_bajo_tag_naranja", "nombre": "🧡 Precio bajo (tag naranja)" },
+      { "id": "renovado_tag_azul", "nombre": "💙 Renovado (tag azul)" },
+      { "id": "otros", "nombre": "🚬 Otros" }
+    ],
+    "inteligencia_datos_performance": [
+      { "id": "extraordinarios", "nombre": "✨ Extraordinarios" },
+      { "id": "congelados", "nombre": "❄️ Congelados" },
+      { "id": "alimentos_despensa", "nombre": "🍅 Alimentos y despensa" },
+      { "id": "aseo_hogar", "nombre": "🧹 Aseo hogar" },
+      { "id": "aseo_cuidado_personal", "nombre": "🪥 Aseo y cuidado personal" },
+      { "id": "bebe", "nombre": "🍼 Bebé" },
+      { "id": "lacteos", "nombre": "🧀 Lácteos" },
+      { "id": "mascotas", "nombre": "🐾 Mascotas" },
+      { "id": "bebidas", "nombre": "🍾 Bebidas" },
+      { "id": "lo_nuevo_tag_verde", "nombre": "💚 Lo nuevo (tag verde)" },
+      { "id": "precio_bajo_tag_naranja", "nombre": "🧡 Precio bajo (tag naranja)" },
+      { "id": "renovado_tag_azul", "nombre": "💙 Renovado (tag azul)" },
+      { "id": "otros", "nombre": "🚬 Otros" }
+    ]
+  },
+
+  "marca_proposito_sostenibilidad": {
+    "reputacion_marca_institucional": [
+      { "id": "extraordinarios", "nombre": "✨ Extraordinarios" },
+      { "id": "congelados", "nombre": "❄️ Congelados" },
+      { "id": "alimentos_despensa", "nombre": "🍅 Alimentos y despensa" },
+      { "id": "aseo_hogar", "nombre": "🧹 Aseo hogar" },
+      { "id": "aseo_cuidado_personal", "nombre": "🪥 Aseo y cuidado personal" },
+      { "id": "bebe", "nombre": "🍼 Bebé" },
+      { "id": "lacteos", "nombre": "🧀 Lácteos" },
+      { "id": "mascotas", "nombre": "🐾 Mascotas" },
+      { "id": "bebidas", "nombre": "🍾 Bebidas" },
+      { "id": "lo_nuevo_tag_verde", "nombre": "💚 Lo nuevo (tag verde)" },
+      { "id": "precio_bajo_tag_naranja", "nombre": "🧡 Precio bajo (tag naranja)" },
+      { "id": "renovado_tag_azul", "nombre": "💙 Renovado (tag azul)" },
+      { "id": "otros", "nombre": "🚬 Otros" }
+    ],
+    "impacto_social": [
+      { "id": "extraordinarios", "nombre": "✨ Extraordinarios" },
+      { "id": "congelados", "nombre": "❄️ Congelados" },
+      { "id": "alimentos_despensa", "nombre": "🍅 Alimentos y despensa" },
+      { "id": "aseo_hogar", "nombre": "🧹 Aseo hogar" },
+      { "id": "aseo_cuidado_personal", "nombre": "🪥 Aseo y cuidado personal" },
+      { "id": "bebe", "nombre": "🍼 Bebé" },
+      { "id": "lacteos", "nombre": "🧀 Lácteos" },
+      { "id": "mascotas", "nombre": "🐾 Mascotas" },
+      { "id": "bebidas", "nombre": "🍾 Bebidas" },
+      { "id": "lo_nuevo_tag_verde", "nombre": "💚 Lo nuevo (tag verde)" },
+      { "id": "precio_bajo_tag_naranja", "nombre": "🧡 Precio bajo (tag naranja)" },
+      { "id": "renovado_tag_azul", "nombre": "💙 Renovado (tag azul)" },
+      { "id": "otros", "nombre": "🚬 Otros" }
+    ],
+    "comunidad_d1_lovers": [
+      { "id": "extraordinarios", "nombre": "✨ Extraordinarios" },
+      { "id": "congelados", "nombre": "❄️ Congelados" },
+      { "id": "alimentos_despensa", "nombre": "🍅 Alimentos y despensa" },
+      { "id": "aseo_hogar", "nombre": "🧹 Aseo hogar" },
+      { "id": "aseo_cuidado_personal", "nombre": "🪥 Aseo y cuidado personal" },
+      { "id": "bebe", "nombre": "🍼 Bebé" },
+      { "id": "lacteos", "nombre": "🧀 Lácteos" },
+      { "id": "mascotas", "nombre": "🐾 Mascotas" },
+      { "id": "bebidas", "nombre": "🍾 Bebidas" },
+      { "id": "lo_nuevo_tag_verde", "nombre": "💚 Lo nuevo (tag verde)" },
+      { "id": "precio_bajo_tag_naranja", "nombre": "🧡 Precio bajo (tag naranja)" },
+      { "id": "renovado_tag_azul", "nombre": "💙 Renovado (tag azul)" },
+      { "id": "otros", "nombre": "🚬 Otros" }
+    ] 
+  }  
+}
+
+
