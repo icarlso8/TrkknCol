@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="robots" content="noindex, nofollow">
+  <title>TRKKN_CO_Loader</title>
+  <link rel="icon" href="assets/TRKKN_icon.png" type="image/png" />
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      background-color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      font-family: 'Mulish', sans-serif;
+    }
+
+    .loader {
+      width: 80%;
+      max-width: 400px;
+      height: auto;
+    }
+
+    @media (max-width: 480px) {
+      .loader {
+        width: 90%;
+        max-width: 280px;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .loader {
+        max-width: 600px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <img class="loader" src="assets/TRKKN_Animated_Logo.gif" alt="Cargando TRKKN..." />
+  <script>
+    setTimeout(() => {
+      window.location.href = "auth.html";
+    }, 3000);
+  </script>
+</body>
+</html>

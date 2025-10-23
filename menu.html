@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="robots" content="noindex, nofollow">
+  <title>TRKKN_CO_Menu</title>
+  <link rel="icon" href="assets/TRKKN_icon.png" type="image/png" />
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Goldman&family=Press+Start+2P&display=swap" rel="stylesheet">
+
+  <!-- 🔒 Firebase SDK (compat) -->
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-auth-compat.js"></script>
+  <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyAA7SZYGbCZrBpurLVrW4RPbM5Zl-32Mog",
+      authDomain: "trkkn-cot-firebase.firebaseapp.com",
+      projectId: "trkkn-cot-firebase",
+      storageBucket: "trkkn-cot-firebase.firebasestorage.app",
+      messagingSenderId: "490397786735",
+      appId: "1:490397786735:web:6cc8d158f904865bdc239a"
+    };
+    firebase.initializeApp(firebaseConfig);
+  </script>
+
+  <style>
+    body {
+      font-family: 'Mulish', sans-serif;
+      padding: 40px;
+      background: #fff;
+      visibility: hidden; /* 🔒 Ocultar hasta autenticar */
+    }
+    h1 {
+      font-family: "Goldman", sans-serif;
+      font-size: 20px;
+      color: #fff;
+      background: #000;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+      box-shadow: 2px 2px 0 #DB0000;
+    }
+    .menu {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      margin-top: 20px;
+    }
+    button {
+      padding: 12px 24px;
+      background: black;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-family: "Goldman", sans-serif;
+      font-size: 14px;
+      cursor: pointer;
+      letter-spacing: 0.5px;
+      transition:
+        background 0.25s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        border 0.2s ease,
+        letter-spacing 0.2s ease;
+    }
+    button:hover { /*Este efecto es la sombra, elevación y animación*/
+      background: #DB0000;
+      transform: translateY(-2px) scale(1.02);
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+      border: 2px solid #900000;
+      letter-spacing: 1px;
+    }
+    button:active { /*Este efecto hace que el botón parezca hundirse al presionarlo*/
+      transform: translateY(1px) scale(0.98);
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+    }
+    .menu-logo {
+      background: white;
+      border: none;
+      cursor: pointer;
+      padding: 10px;
+    }
+    .menu-logo img {
+      height: 80px;
+    }
+    .logo {
+      height: 50px; /* o el tamaño que necesites */
+      vertical-align: text-bottom; /* alinea con la parte inferior del texto.
+      margin-right: 8px; /* espacio entre el ícono y el texto */
+    }
+    .menu-list {
+      list-style-type: none; /* Puedes cambiar a circle, square, etc. */
+      padding-left: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: flex-start; /* Alinea botones con la viñeta */
+    }
+    .menu-list li {
+      list-style-position: inside;
+    }
+    .header-title {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  
+  <div class="header-title">
+    <h1>
+      <img src="assets/TRKKN_icon.png" alt="TRKKN Logo" class="logo" />
+      _Proyectos en Desarrollo
+    </h1>
+  </div>
+
+  <div class="menu">
+    <ul class="menu-list">
+      <li><button onclick="location.href='omniadsai_v1.html'">🚀 OmniAds AI v1.0</button></li>
+      <li><button onclick="location.href='apis_test.html'">🚀 GASBackend APIs v1.0</button></li>
+      <li><button onclick="location.href='wci.html'">💬 WhatsApp Conversion Import (WCI)</button></li>
+      <li><button onclick="location.href='Anunciante/TQ/omniadsai_tq.html'">💡 OmniAds AI Tecnoquímicas</button></li>
+      <li><button onclick="location.href='Anunciante/Tigo/omniadsai_tigo.html'">💡 OmniAds AI Tigo</button></li>
+      <li><button onclick="location.href='Anunciante/D1/omniadsai_d1.html'">💡 OmniAds AI D1</button></li>
+      <li><button id="logoutBtn">🔒 Cerrar sesión</button></li>
+    </ul>
+  </div>
+
+  <script>
+    const auth = firebase.auth();
+    auth.onAuthStateChanged(user => {
+      const logoutFlag = localStorage.getItem("logoutInProgress");
+      if (!user) {
+        if (logoutFlag) {
+          localStorage.removeItem("logoutInProgress"); // 🧹 Limpia la bandera
+          return; // No mostrar alerta, ya lo hicimos
+        }
+          alert("🔒 Inicia sesión Trkkie!");
+          window.location.href = "auth.html";
+      } else {
+        document.body.style.visibility = "visible";
+      }
+    });
+
+    document.getElementById("logoutBtn").addEventListener("click", async () => {
+      localStorage.setItem("logoutInProgress", "true"); // Marca la bandera para evitar doble alerta de inicio de sesión
+      await auth.signOut();
+      alert("⚠️ Game Over Trkkie!");
+      window.location.href = "auth.html";
+    });
+  </script>
+</body>
+</html>

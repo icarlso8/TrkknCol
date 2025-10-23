@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- Google Tag Manager script debe ir aquí -->
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-MWVN3XLL');</script>
+  <!-- End Google Tag Manager -->
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow">
+  <title>TRKKN_CO_wci</title>
+  <link rel="icon" href="assets/TRKKN_icon.png" type="image/png" />
+
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    .logo {
+      width: 40px;
+      height: 40px;
+      margin-right: 0.5rem;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 2rem;
+    }
+    .title {
+      font-size: 1.3rem;
+      font-weight: bold;
+    }
+    .buttons {
+      display: flex;
+      gap: 1rem;
+    }
+    .btn {
+      padding: 0.6rem 1.2rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      color: white;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+    .btn-whatsapp {
+      background-color: #25D366;
+    }
+    .btn-call {
+      background-color: #007BFF;
+    }
+  </style>
+</head>
+  
+<body style="display: none;">
+  <!-- Google Tag Manager (noscript) debe ir aquí -->  
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MWVN3XLL"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <div class="container">
+    <div class="header">
+      <img src="assets/TRKKN_icon.png" alt="TRKKN Logo" class="logo" />
+      <span class="title">Bienvenido al sitio de pruebas WCI</span>
+    </div>
+  
+    <div class="buttons">
+      <button class="btn btn-whatsapp" onclick="handleWhatsAppClick()">Contáctanos por WhatsApp</button>
+      <button class="btn btn-call" onclick="handleCallClick()">Llámanos ahora</button>
+    </div>
+   </div>
+
+  <script>
+    function handleWhatsAppClick() {
+      console.log("Botón de WhatsApp presionado");
+      // window.location.href = "https://wa.me/1234567890";
+    }
+
+    function handleCallClick() {
+      console.log("Botón de llamada presionado");
+      // window.location.href = "tel:+1234567890";
+    }
+  </script>
+
+  <!-- <h2>Vista de demostración de WCI (WhatsApp Conversion Import)</h2> -->
+  <!-- <p>En construcción...</p> -->
+
+  <!-- ✅ Protección de acceso con Firebase Módulos -->
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+    import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+    import { firebaseConfig } from "./firebase-config.js";
+
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+
+    onAuthStateChanged(auth, user => {
+      if (!user) {
+        alert("🔒 Inicia sesión Trkkie!");
+        window.location.href = "auth.html";
+      } else {
+        console.log("✅ Usuario autenticado:", user.email);
+        document.body.style.display = "block";
+      }
+    });
+  </script>
+  
+</body>
+  
+</html>

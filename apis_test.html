@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>OAdsAI_GASBackend_Gemini & Stability</title>
+  <link rel="icon" href="assets/TRKKN_icon.png" type="image/png" />
+  <style>
+    body { font-family: sans-serif; padding:20px; max-width:700px; margin:auto; background:#f4f4f4; }
+    h2 { text-align:center; color:#333; }
+    textarea, pre { width:100%; margin-bottom:15px; padding:10px; border-radius:6px; border:1px solid #ccc; font-size:14px; }
+    textarea { min-height:100px; resize: vertical; }
+    button { display:inline-block; padding:10px 18px; font-size:16px; background:#4CAF50; color:white; border:none; border-radius:6px; cursor:pointer; margin-bottom:15px; }
+    button:hover { background:#45a049; }
+    #respuesta { background:white; white-space:pre-wrap; min-height:120px; border:1px solid #ccc; padding:10px; border-radius:6px; font-family:monospace; }
+    label, textarea, button, pre { display:block; margin-top:5px; }
+  </style>
+
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+    import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+    import { firebaseConfig } from "./firebase-config.js";
+
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+
+    onAuthStateChanged(auth, user => {
+      if (!user) {
+        alert("🔒 Inicia sesión Trkkie!");
+        window.location.href = "auth.html";
+      } else {
+        console.log("✅ Usuario autenticado:", user.email);
+        document.body.style.display = "block";
+      }
+    });
+  </script>
+</head>
+<body style="display:none;">
+  <h2>Test HTML_GASBackend_Gemini & Stability</h2>
+  
+  <label>Prompt:</label>
+  <textarea id="prompt" placeholder="Escribe tu prompt aquí..."></textarea>
+  
+  <button id="sendGemini">Enviar a Gemini (Text)</button>
+  <button id="sendStability">Generar Imagen (HF)</button>
+    
+  <label>Respuesta:</label>
+  <pre id="respuesta">Esperando respuesta...</pre>
+
+  <script>
+    const GAS_URL = "https://script.google.com/macros/s/AKfycbwVXklQ2ljmMUxys7fCh5ygUyS3jheoHQO3SIYvLr9ETQcOABgrMdaLrCEiiDBpStmW/exec";
+
+    async function sendRequest(action) {
+      const prompt = document.getElementById("prompt").value.trim();
+      if (!prompt) return alert("Escribe un prompt primero.");
+
+      const respEl = document.getElementById("respuesta");
+      respEl.textContent = "⏳ Generando respuesta...";
+
+      try {
+        const resp = await fetch(GAS_URL, {
+          method: "POST",
+          headers: { "Content-Type": "text/plain" },
+          body: JSON.stringify({ omniToken: "gIe1TET33hc4i1w9K0WvcS6DHMIYjCgm5fgRqUWS", action, prompt })
+        });
+
+        const data = await resp.json();
+        console.log(`Respuesta completa ${action}:`, data);
+
+        if (data.action === "geminiPrompt") {
+          respEl.textContent = data.output || "Sin respuesta";
+        } 
+        else if (data.action === "stabilityImage") {
+          if(data.imageUrl) {
+            respEl.innerHTML = `<img src="${data.imageUrl}" alt="Imagen generada" style="max-width:300px; margin-top:10px;" />`;
+          } else {
+            respEl.textContent = "❌ No se generó la imagen";
+          }
+        }
+
+      } catch(err) {
+        console.error("Error:", err);
+        respEl.textContent = "❌ Error al conectar con el backend.";
+      }
+    }
+
+    document.getElementById("sendGemini").addEventListener("click", () => sendRequest("geminiPrompt"));
+    document.getElementById("sendStability").addEventListener("click", () => sendRequest("stabilityImage"));
+  </script>
+</body>
+</html>
+
+

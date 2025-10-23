@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+  <style id="hide-body-style">
+    html, body {
+      display: none !important;
+      background: #ffffff;
+    }
+  </style>
+  
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TRKKN_CO_OmniAdsAI</title>
+  <!-- <link rel="icon" href="https://cdn.jsdelivr.net/gh/icarlso8/TRKKN_CoT/assets/logos/logo_claro_v1.png"> -->
+  <link rel="icon" href="assets/TRKKN_icon.png" type="image/png" />
+  <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+
+  <style>
+  body {
+    /* display: none !important; bloquea la visualización incluso después de que se ejecuta el <script type="module"> "impide que JavaScript pueda cambiar el estilo dinámicamente */
+    margin: 0;
+    font-family: 'Mulish', sans-serif;
+    background: #ffffff; /* ← Fondo blanco */
+    color: #000000;       /* ← Texto oscuro para contraste */
+    /* display: none; */
+    /* visibility: hidden; */
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    max-width: 1080px;
+    /*margin: 0 auto;*/
+    margin-left: 40px;
+    gap: 20px;
+  }
+
+  .form-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 12px;
+    width: 100%;
+  }
+
+  .form-section strong {
+    min-width: 160px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .form-section label {
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  input[type="text"] {
+    padding: 6px 8px;
+    border-radius: 6px;
+    /*border: none;*/
+    border: 1px solid #ccc;
+    font-family: 'Mulish', sans-serif;
+    max-width: 260px;
+    color: #000; /* texto negro */
+    background-color: #fff; /* fondo blanco */
+  }
+
+  input[type="color"],
+  select {
+    padding: 4px;
+    border-radius: 6px;
+    font-family: 'Mulish', sans-serif;
+  }
+
+  input[type="checkbox"] {
+    transform: scale(1.2);
+  }
+
+  button {
+    font-family: 'Mulish', sans-serif;
+    padding: 10px 16px;
+    background-color: #00C6AE;
+    color: #000;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+
+  button:hover {
+    background-color: #00b39b;
+  }
+  </style>
+
+  <!-- ✅ Protección de sesión con Firebase -->
+  <!-- El script de autenticación debe ejecutarse antes de que el HTML se pinte, para eso se copia antes del cierre del <head> -->
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+    import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+    import { firebaseConfig } from "./firebase-config.js";
+  
+      /* window.addEventListener("DOMContentLoaded", () => { */ /* Ya no es necesario */
+      const app = initializeApp(firebaseConfig);
+      const auth = getAuth(app);
+  
+      onAuthStateChanged(auth, user => {
+        if (!user) {
+          alert("🔒 Inicia sesión Trkkie!");
+          window.location.href = "auth.html";
+        } else {
+          console.log("✅ Usuario autenticado:", user.email);
+          document.getElementById("hide-body-style")?.remove();
+          document.body.style.display = "block";
+        }
+      });
+  </script>
+  
+</head>
+<body>
+  <iframe id="bridgeFrame" src="https://script.google.com/macros/s/AKfycbxIGlpou7kjXHZVI0hjOR7ISZ8D1rFWvYOA9epqcvC6JxhRshA7X3CAqVhomDeA9bixVA/exec" style="display: none;"></iframe>
+
+  <!-- <h1><img src="Alchimoji_Logo.png" alt="Alchimoji Logo"></h1> -->
+  <h1><img src="assets/Omni_Ads_AI_FB.png" alt="Logo Omni Ads AI..." style= "width: 300px; margin-left: 40px" /></h1>
+
+  <!-- <form id="alchimoji-form" style="text-align: left;"> -->
+  <form id="assetForm" style="text-align: left; margin-top: 40px;">
+  <!-- <form id="assetForm" style="text-align: left;"> -->
+  <!-- Logo -->
+  <!-- <img src="assets/Alchimoji_Logo.png" alt="Alchimoji Logo" style="height: 60px; margin-bottom: 10px;" /> -->
+
+  <!-- Audiencias -->
+  <div class="form-section">
+    <strong>🎯 Audiencias:</strong>
+    <label><input type="checkbox" name="audiencia" value="gamers"> 🎮 Gamers</label>
+    <label><input type="checkbox" name="audiencia" value="streaming"> 📺 Streaming</label>
+    <label><input type="checkbox" name="audiencia" value="melomaniac"> 🎵 Melómanos</label>
+  </div>
+
+  <!-- Momento del día -->
+  <div class="form-section">
+    <strong>🕒 Momento del día:</strong>
+    <label><input type="checkbox" name="momento" value="dia"> 🌞 Día</label>
+    <label><input type="checkbox" name="momento" value="noche"> 🌙 Noche</label>
+  </div>
+
+  <!-- Logos -->
+  <div class="form-section">
+    <strong>🏷️ Logo:</strong>
+    <label>
+      <select name="logoSelect" id="logoSelect">
+        <option value="" disabled selected>Selecciona un logo</option>
+      </select>
+    </label>
+  </div>
+
+  <!-- Copies -->
+  <div class="form-section" style="flex-direction: column; align-items: flex-start;">
+    <strong>📝 Copies:</strong>
+
+    <!-- Selector de modo Manual / IA -->
+    <label style="margin-left: 16px;">
+      <input type="radio" name="copyMode" value="manual" checked> ✍️ Escribir manualmente
+    </label>
+    <label style="margin-left: 16px;">
+      <input type="radio" name="copyMode" value="ia"> 🤖 Generar con IA
+      <select id="iaModelSelect" disabled>
+        <option value="gemini">Gemini (TopicMine)</option>
+        <option value="openai">OpenAI</option>
+        <option value="claude">Claude</option>
+        <option value="mistral">Mistral</option>
+        <option value="groq">Groq</option>
+      </select>
+      <button type="button" id="generateIA" disabled>Generar</button>
+    </label>
+    
+    <!-- Campos de texto de copies -->
+    <label style="margin-left: 16px; width: 100%;">
+      <input type="checkbox" name="copy1">
+      Texto 1:
+      <input type="text" maxlength="60" name="copyText1" placeholder="Texto 1..." style="margin-left: 8px; width: 60%;">
+      <input type="color" name="copyColor1" value="#ffffff" title="Color del texto">
+    </label>
+
+    <label style="margin-left: 16px; width: 100%;">
+      <input type="checkbox" name="copy2">
+      Texto 2:
+      <input type="text" maxlength="60" name="copyText2" placeholder="Texto 2..." style="margin-left: 8px; width: 60%;">
+      <input type="color" name="copyColor2" value="#ffffff" title="Color del texto">
+    </label>
+
+    <label style="margin-left: 16px; width: 100%;">
+      <input type="checkbox" name="copy3">
+      Texto 3:
+      <input type="text" maxlength="60" name="copyText3" placeholder="Texto 3..." style="margin-left: 8px; width: 60%;">
+      <input type="color" name="copyColor3" value="#ffffff" title="Color del texto">
+    </label>
+  </div>
+
+  <!-- Íconos -->
+  <div class="form-section" style="flex-direction: column; align-items: flex-start;">
+    <strong>🧩 Íconos:</strong>
+
+    <label style="margin-left: 16px;">
+      <input type="checkbox" name="icon1">
+      Icono 1:
+      <select name="iconSelect1" style="margin-left: 8px;">
+        <!-- <option value="icon1.png">icon1.png</option> -->
+        <!-- <option value="icon2.png">icon2.png</option> -->
+      </select>
+    </label>
+
+    <label style="margin-left: 16px;">
+      <input type="checkbox" name="icon2">
+      Icono 2:
+      <select name="iconSelect2" style="margin-left: 8px;">
+        <!-- <option value="icon1.png">icon1.png</option> -->
+        <!-- <option value="icon2.png">icon2.png</option> -->
+      </select>
+    </label>
+
+    <label style="margin-left: 16px;">
+      <input type="checkbox" name="icon3">
+      Icono 3:
+      <select name="iconSelect3" style="margin-left: 8px;">
+        <!-- <option value="icon1.png">icon1.png</option> -->
+        <!-- <option value="icon2.png">icon2.png</option> -->
+      </select>
+    </label>
+  </div>
+
+  <!-- Tamaños -->
+  <div class="form-section">
+    <strong>📐 Tamaños:</strong>
+    <label><input type="checkbox" name="size" value="300x600"> 300x600</label>
+    <label><input type="checkbox" name="size" value="728x90"> 728x90</label>
+    <label><input type="checkbox" name="size" value="300x250"> 300x250</label>
+    <label><input type="checkbox" name="size" value="320x50"> 320x50</label>
+    <label><input type="checkbox" name="size" value="160x600"> 160x600</label>
+  </div>
+
+  <!-- Botones -->
+  <div class="form-section">
+    <!-- <button type="button" onclick="generateCreatives()">Generar creatividades</button> -->
+    <button id="generateBtn" type="submit">Generar creatividades</button>
+    <!-- <button type="button" onclick="downloadAll()">Descargar todas</button> -->
+    <button id="downloadAllBtn" type="button">Descargar todas</button>
+  </div>
+  </form>
+
+
+
+  <div class="preview-container" id="previewContainer"></div>
+
+  <script>
+    const form = document.getElementById('assetForm');
+    const previewContainer = document.getElementById('previewContainer');
+    const downloadAllBtn = document.getElementById('downloadAllBtn');
+    const baseURL = "https://cdn.jsdelivr.net/gh/icarlso8/TRKKN_CoT/assets";
+    let generatedImages = [];
+    let generatedMetadata = [];
+
+    function downloadURI(uri, name) {
+      const link = document.createElement("a");
+      link.download = name;
+      link.href = uri;
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
+
+    async function sha256(str) {
+      const encoder = new TextEncoder();
+      const data = encoder.encode(str);
+      const hashBuffer = await crypto.subtle.digest('SHA-256', data);
+      const hashArray = Array.from(new Uint8Array(hashBuffer));
+      return hashArray.map(b => b.toString(16).padStart(2, '0')).join('').substring(0, 16); // 16 chars
+    }
+
+      function generateID() {
+        return Math.random().toString(36).substring(2, 10) + Date.now().toString(36);
+      }
+
+      async function generateVariantID(meta) {
+        const variantString = [
+          meta.audiencia,
+          meta.momento,
+          meta.tamano,
+          meta.copies.join(';'),
+          meta.logo || "",
+          meta.iconos.join(';')
+        ].join('|');
+        return await sha256(variantString); // Devuelve hash de 16 caracteres
+      }
+
+      function getUTCTimestampISO() {
+        return new Date().toISOString(); // Siempre en formato UTC
+      }
+
+      function getLocalTimestampISO() {
+        const now = new Date();
+        const tzOffsetMin = now.getTimezoneOffset(); // en minutos
+        const sign = tzOffsetMin <= 0 ? '+' : '-';
+        const absOffset = Math.abs(tzOffsetMin);
+        const offsetHours = String(Math.floor(absOffset / 60)).padStart(2, '0');
+        const offsetMinutes = String(absOffset % 60).padStart(2, '0');
+      
+        const year = now.getFullYear();
+        const month = String(now.getMonth() + 1).padStart(2, '0');
+        const day = String(now.getDate()).padStart(2, '0');
+        const hours = String(now.getHours()).padStart(2, '0');
+        const minutes = String(now.getMinutes()).padStart(2, '0');
+        const seconds = String(now.getSeconds()).padStart(2, '0');
+        const ms = String(now.getMilliseconds()).padStart(3, '0');
+      
+        return `${year}-${month}-${day}T${hours}:${minutes}:${seconds}.${ms}${sign}${offsetHours}:${offsetMinutes}`;
+      }
+
+      /*
+      La función getLocalTimestampISO() está duplicando la corrección del huso horario, porque el objeto Date en JavaScript ya devuelve la hora local, así que no se necesitas restar el getTimezoneOffset
+      function getLocalTimestampISO() {
+        const now = new Date();
+        const tzOffsetMin = now.getTimezoneOffset(); // ← no lo inviertas
+        const sign = tzOffsetMin <= 0 ? '+' : '-';
+        const absOffset = Math.abs(tzOffsetMin);
+        const offsetHours = String(Math.floor(absOffset / 60)).padStart(2, '0');
+        const offsetMinutes = String(absOffset % 60).padStart(2, '0');
+      
+        const localTime = new Date(now.getTime() - tzOffsetMin * 60000); // ← resta, no suma (ELIMINAR)
+      
+        const year = localTime.getFullYear();
+        const month = String(localTime.getMonth() + 1).padStart(2, '0');
+        const day = String(localTime.getDate()).padStart(2, '0');
+        const hours = String(localTime.getHours()).padStart(2, '0');
+        const minutes = String(localTime.getMinutes()).padStart(2, '0');
+        const seconds = String(localTime.getSeconds()).padStart(2, '0');
+        const ms = String(localTime.getMilliseconds()).padStart(3, '0');
+      
+        return `${year}-${month}-${day}T${hours}:${minutes}:${seconds}.${ms}${sign}${offsetHours}:${offsetMinutes}`;
+      }
+      */
+
+      form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      previewContainer.innerHTML = '';
+      generatedImages = [];
+    
+      const audiencias = [...form.querySelectorAll('input[name="audiencia"]:checked')].map(el => el.value);
+      const momentos = [...form.querySelectorAll('input[name="momento"]:checked')].map(el => el.value);
+      const sizes = [...form.querySelectorAll('input[name="size"]:checked')].map(el => el.value);
+      const copies = [];
+    
+      if (form.copy1.checked) copies.push({ text: form.copyText1.value, color: form.copyColor1.value });
+      if (form.copy2.checked) copies.push({ text: form.copyText2.value, color: form.copyColor2.value });
+      if (form.copy3.checked) copies.push({ text: form.copyText3.value, color: form.copyColor3.value });
+
+      audiencias.forEach(aud => {
+        momentos.forEach(mom => {
+          sizes.forEach(size => {
+            const fondoPath = `${baseURL}/${aud}/${mom}/${aud}_${mom}_01.png`;
+            const logoPath = form.logoSelect.value ? form.logoSelect.value.replace('assets', baseURL) : '';
+    
+            const canvas = document.createElement('canvas');
+            const [w, h] = size.split('x').map(Number);
+            canvas.width = w;
+            canvas.height = h;
+            const ctx = canvas.getContext('2d');
+    
+            const fondoImg = new Image();
+            fondoImg.crossOrigin = "anonymous";
+            fondoImg.src = fondoPath;
+    
+            const logoImg = new Image();
+            logoImg.crossOrigin = "anonymous";
+            logoImg.src = logoPath;
+    
+            const iconPaths = ['iconSelect1', 'iconSelect2', 'iconSelect3'].map((iconSelect, index) => {
+              const isChecked = form[`icon${index + 1}`]?.checked;
+              const path = form[iconSelect]?.value;
+              return isChecked && path ? path.replace('assets', baseURL) : null;
+            }).filter(Boolean);
+    
+            const loadImage = (src) => {
+              return new Promise(resolve => {
+                const img = new Image();
+                img.crossOrigin = "anonymous";
+                img.onload = () => resolve(img);
+                img.src = src;
+              });
+            };
+    
+            Promise.all([
+              loadImage(fondoPath),
+              logoPath ? loadImage(logoPath) : null,
+              ...iconPaths.map(loadImage)
+            ]).then(([fondo, logo, ...icons]) => {
+              ctx.drawImage(fondo, 0, 0, w, h);
+              if (logo) ctx.drawImage(logo, 10, 10, 40, 40);
+    
+              icons.forEach((icon, i) => {
+                ctx.drawImage(icon, w - 40, 10 + i * 40, 30, 30);
+              });
+    
+              copies.forEach((copy, index) => {
+                ctx.fillStyle = copy.color || "#ffffff";
+                ctx.font = "bold 14px Mulish";
+                ctx.fillText(copy.text, 10, h - 20 - index * 20);
+              });
+    
+              const dataURL = canvas.toDataURL("image/png");
+              const fileName = `${aud}_${mom}_${size}.png`;
+    
+              const div = document.createElement('div');
+              div.className = 'preview';
+              div.style.width = w + 'px';
+              div.style.height = h + 'px';
+              div.innerHTML = `
+                <img src="${dataURL}" alt="Creatividad" />
+                <button onclick="downloadURI('${dataURL}', '${fileName}')">Descargar</button>
+              `;
+              previewContainer.appendChild(div);
+              generatedImages.push({ name: fileName, data: dataURL });
+
+              const timestamp_local = getLocalTimestampISO();
+              const timestamp_utc = getUTCTimestampISO();
+              
+              // Construye metadata ya con todos los datos actuales (incluye tamano real)
+              const metadata = {
+                nombre: fileName,
+                audiencia: aud,
+                momento: mom,
+                tamano: size,
+                copies: copies.map(c => c.text),
+                logo: logoPath ? logoPath.split('/').pop() : null,
+                iconos: iconPaths.map(p => p.split('/').pop())
+              };
+              
+              // ✅ Genera el variant_id con los datos correctos
+              generateVariantID(metadata).then(variant_id => {
+                metadata.variant_id = variant_id;
+                metadata.timestamp_local = timestamp_local;
+                metadata.timestamp_utc = timestamp_utc;
+                metadata.id = `${variant_id}-${timestamp_local}`;
+                generatedMetadata.push(metadata);
+              });
+
+              // ✅ Agrega timestamp e id final -> Redundante
+              // metadata.timestamp_local = timestamp_local; -> Redundante
+              // metadata.timestamp_utc = timestamp_utc; -> Redundante
+              // metadata.id = `${metadata.variant_id}-${timestamp_local}`; -> Redundante
+              
+              // ✅ Guarda en el array de metadatos
+              // generatedMetadata.push(metadata); Línea Duplicada Línea 397
+            });
+          });
+        });
+      });
+    });
+
+    // Descarga completa organizada por audiencia / momento / tamaño
+    downloadAllBtn.addEventListener('click', async () => {
+      if (!generatedImages.length) {
+        alert("Primero genera creatividades.");
+        return;
+      }
+    
+      const zip = new JSZip();
+    
+      generatedImages.forEach(img => {
+        // Extrae partes del nombre
+        const [audiencia, momento, size] = img.name.replace('.png', '').split('_');
+        const folderPath = `${audiencia}/${momento}/${size}`;
+        zip.folder(folderPath).file(`${img.name}`, img.data.split(',')[1], { base64: true });
+      });
+
+      zip.file("alchimoji_metadata.json", JSON.stringify(generatedMetadata, null, 2));
+
+      // Convertir metadata a CSV
+      const csvHeader = "id,variant_id,timestamp_local,timestamp_utc,nombre,audiencia,momento,tamano,copies,logo,iconos";
+      const csvRows = generatedMetadata.map(meta => {
+        return [
+          `"${meta.id}"`,
+          `"${meta.variant_id}"`,
+          `"${meta.timestamp_local}"`,
+          `"${meta.timestamp_utc}"`,
+          `"${meta.nombre}"`,
+          `"${meta.audiencia}"`,
+          `"${meta.momento}"`,
+          `"${meta.tamano}"`,
+          `"${meta.copies.join(';')}"`,
+          `"${meta.logo || ""}"`,
+          `"${meta.iconos.join(';')}"`,
+        ].join(",");
+      });
+      
+      const csvContent = [csvHeader, ...csvRows].join("\n");
+      zip.file("alchimoji_metadata.csv", csvContent);
+
+      const blob = await zip.generateAsync({ type: "blob" });
+      const link = document.createElement("a");
+      link.href = URL.createObjectURL(blob);
+      link.download = "alchimoji_creatividades.zip";
+      link.click();
+    });
+
+    // 🔁 Cambiar entre modo manual / IA para los copies
+    const iaModelSelect = document.getElementById('iaModelSelect');
+    const generateIA = document.getElementById('generateIA');
+  
+    document.querySelectorAll('input[name="copyMode"]').forEach(radio => {
+      radio.addEventListener('change', (e) => {
+        const isIA = e.target.value === 'ia';
+        iaModelSelect.disabled = !isIA;
+        generateIA.disabled = !isIA;
+  
+        // Deshabilitar o habilitar campos de texto
+        form.copyText1.disabled = isIA;
+        form.copyText2.disabled = isIA;
+        form.copyText3.disabled = isIA;
+      });
+    });
+  
+    generateIA.addEventListener('click', () => {
+      const model = iaModelSelect.value;
+      alert(`🔄 Generando copies con ${model}... (simulado)`);
+  
+      // Asignar textos simulados
+      form.copy1.checked = true;
+      form.copyText1.value = "Pásate a Tigo";
+      form.copyText1.disabled = true;
+  
+      form.copy2.checked = true;
+      form.copyText2.value = "tú mejor opción!";
+      form.copyText2.disabled = true;
+  
+      form.copy3.checked = true;
+      form.copyText3.value = "Todo porque hoy es jueves";
+      form.copyText3.disabled = true;
+    });
+
+    // Cargar dinámicamente los íconos desde el JSON -> Solo se debe actualizar el JSON
+    fetch('assets/icons/icons.json')
+      .then(response => response.json())
+      .then(iconList => {
+        ['iconSelect1', 'iconSelect2', 'iconSelect3'].forEach(selectName => {
+          const select = document.querySelector(`select[name="${selectName}"]`);
+          if (!select) return;
+          select.innerHTML = '<option value="" disabled selected>Selecciona un ícono</option>';
+          iconList.forEach(icon => {
+            const option = document.createElement('option');
+            option.value = `assets/icons/${icon}`;
+            option.textContent = icon;
+            select.appendChild(option);
+          });
+        });
+      })
+      .catch(error => console.error('Error cargando íconos:', error));
+    
+    // Cargar logos (independiente)
+    fetch('assets/logos/logos.json')
+      .then(response => response.json())
+      .then(logoList => {
+        const select = document.querySelector('select[name="logoSelect"]');
+        select.innerHTML = '<option value="" disabled selected>Selecciona un logo</option>';
+        logoList.forEach(logo => {
+          const option = document.createElement('option');
+          option.value = `assets/logos/${logo}`;
+          option.textContent = logo;
+          select.appendChild(option);
+        });
+      })
+      .catch(error => console.error('Error cargando logos:', error));
+
+    // 🔁 Escuchar mensajes desde el iframe (bridge)
+    window.addEventListener("message", (event) => {
+      if (event.origin !== "https://script.google.com") return; // Seguridad: valida el origen
+    
+      const data = event.data;
+      if (data.result) {
+        console.log("✅ Copy recibido:", data.result);
+        form.copy1.checked = true;
+        form.copyText1.value = data.result;
+        form.copyText1.disabled = true;
+      } else {
+        console.error("❌ Error del bridge:", data.error);
+      }
+    });
+    
+    // 🧠 Enviar prompt al bridge
+    function solicitarCopy(prompt) {
+      const iframe = document.getElementById("bridgeFrame");
+      iframe.contentWindow.postMessage({ prompt }, "*");
+    }
+    
+    // ⏩ Reemplaza el contenido del botón Generar IA
+    generateIA.addEventListener('click', () => {
+      const model = iaModelSelect.value;
+      if (model === "gemini") {
+        const prompt = "Dame un copy de máximo 50 caracteres para promocionar un plan pospago de Tigo";
+        solicitarCopy(prompt);
+      } else {
+        alert(`Modelo no implementado aún: ${model}`);
+      }
+    });
+
+  </script>
+
+  <!-- <script>document.body.style.display = "block";</script> --> <!-- Ya no necesario -->
+  
+</body>
+</html>
