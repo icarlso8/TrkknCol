@@ -10,44 +10,39 @@
         { "id": "hbo_c2", "nombre": "📣 Estacional: HBO Max Campaña 2 (🚀Branding)" }
       ],
       "win": [
-        { "id": "win_c1", "nombre": "📣 Estacional: ⚽ Win + Campaña 1 (🚀Branding)" },
-        { "id": "win_c2", "nombre": "📣 Estacional: ⚽ Win + Campaña 2 (🚀Branding)" }
+        { "id": "win_c1", "nombre": "📣 Tácticas/Data-Driven: ⚽ Win + Campaña 1 (❤️Engagement)" },
+        { "id": "win_c2", "nombre": "📣 Tácticas/Data-Driven: ⚽ Win + Campaña 2 (❤️Engagement)" }
       ],
        "anteriorpremium": [
-        { "id": "anteriorpremium_c1", "nombre": "📣 Estacional: ⏹️ Campaña Anterior 1 (🚀Branding)" },
-        { "id": "anteriorpremium_c2", "nombre": "📣 Estacional: ⏹️ Campaña Anterior 2 (🚀Branding)" }
+        { "id": "anteriorpremium_c1", "nombre": "📣 Permanente: ⏮️ Premium Anterior Campaña 1 (🎯Performance)" },
+        { "id": "anteriorpremium_c2", "nombre": "📣 Permanente: ⏮️ Premium Anterior Campaña 2 (🎯Performance)" }
       ]
     }
   },
   "movil": {
     "prepago": {
       "pasate": [
-        { "id": "30mb_c1", "nombre": "📣 Permanente: ⚡ 30 Mb Campaña 1 (🎯Performance)" },
-        { "id": "30mb_c2", "nombre": "📣 Permanente: ⚡ 30 Mb Campaña 2 (🎯Performance)" }
+        { "id": "30mb_c1", "nombre": "📣 Tácticas/Data-Driven:⚡ 30 Mb Prepago Pásate Campaña 1 (🎯Performance)" },
+        { "id": "30mb_c2", "nombre": "📣 Tácticas/Data-Driven:⚡ 30 Mb Prepago Pásate Campaña 2 (🎯Performance)" }
       ],
       "paquete": [
-        { "id": "50mb_c1", "nombre": "📣 Permanente: 🚀 30 Mb Campaña 1 (🎯Performance)" },
-        { "id": "50mb_c2", "nombre": "📣 Permanente: 🚀 30 Mb Campaña 2 (🎯Performance)" }
+        { "id": "50mb_c1", "nombre": "📣 Tácticas/Data-Driven: 🚀 60 Mb Prepago Paquetes Campaña 1 (🎯Performance)" },
+        { "id": "50mb_c2", "nombre": "📣 Tácticas/Data-Driven: 🚀 60 Mb Prepago Paquetes Campaña 2 (🎯Performance)" }
       ],
       "anteriorprepago": [
-        { "id": "anteriorprepago_c1", "nombre": "📣 Permanente: ⏹️ Prepago Anterior Campaña 1 (🚀Branding)" },
-        { "id": "anteriorprepago_c2", "nombre": "📣 Permanente: ⏹️ Prepago Anterior Campaña 2 (🚀Branding)" }
+        { "id": "anteriorprepago_c1", "nombre": "📣 Permanente: ⏮️ Prepago Anterior Campaña 1 (🎯Performance)" },
+        { "id": "anteriorprepago_c2", "nombre": "📣 Permanente: ⏮️ Prepago Anterior Campaña 2 (🎯Performance)" }
       ]
     },
     "pospago": {
       "pasapospago": [
-        { "id": "500mb_c1", "nombre": "📣 Permanente: 📡 500 Mb Campaña 1 (🚀Branding/❤️Engagement)" },
-        { "id": "500mb_c2", "nombre": "📣 Permanente: 📡 500 Mb Campaña 2 (🚀Branding/❤️Engagement)" }
+        { "id": "500mb_c1", "nombre": "📣 Tácticas/Data-Driven:📡 500 Mb Pospago Pásate Campaña 1 (🎯Performance)" },
+        { "id": "500mb_c2", "nombre": "📣 Tácticas/Data-Driven:📡 500 Mb Pospago Pásate Campaña 2 (🎯Performance)" }
       ],
       "anteriorpospago": [
-        { "id": "anteriorpospago_c1", "nombre": "📣 Permanente: ⏹️ Pospago Anterior Campaña 1 (🚀Branding)" },
-        { "id": "anteriorpospago_c2", "nombre": "📣 Permanente: ⏹️ Pospago Anterior Campaña 2 (🚀Branding)" }
+        { "id": "anteriorpospago_c1", "nombre": "📣 Permanente: ⏮️ Pospago Anterior Campaña 1 (🎯Performance)" },
+        { "id": "anteriorpospago_c2", "nombre": "📣 Permanente: ⏮️ Pospago Anterior Campaña 2 (🎯Performance)" }
       ]
     }
   }
 }
-
-
-
-
-
