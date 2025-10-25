@@ -1,11 +1,11 @@
 {
   "hbomax": [
-    { "id": "fitness", "nombre": "Fitness", "emoji": "💪", "factores_disponibles": ["momento", "ciudad"] },
-    { "id": "homebody", "nombre": "Homebodys", "emoji": "🏠", "factores_disponibles": ["momento", "ciudad"] },
-    { "id": "mayortech", "nombre": "Mayortech", "emoji": "👵", "factores_disponibles": ["momento", "ciudad"] },
-    { "id": "office", "nombre": "Office", "emoji": "💼", "factores_disponibles": ["momento", "ciudad"] },
-    { "id": "partners", "nombre": "Partners", "emoji": "🤝", "factores_disponibles": ["momento", "ciudad"] },
-    { "id": "streaming", "nombre": "Streaming", "emoji": "📺", "factores_disponibles": ["momento", "ciudad"] }
+    { "id": "fitness", "nombre": "Fitness", "emoji": "💪", "factores_disponibles": ["momento", "ciudad", "estacionalidad"] },
+    { "id": "homebody", "nombre": "Homebodys", "emoji": "🏠", "factores_disponibles": ["momento", "ciudad", "estacionalidad"] },
+    { "id": "mayortech", "nombre": "Mayortech", "emoji": "👵", "factores_disponibles": ["momento", "ciudad", "estacionalidad"] },
+    { "id": "office", "nombre": "Office", "emoji": "💼", "factores_disponibles": ["momento", "ciudad", "estacionalidad"] },
+    { "id": "partners", "nombre": "Partners", "emoji": "🤝", "factores_disponibles": ["momento", "ciudad", "estacionalidad"] },
+    { "id": "streaming", "nombre": "Streaming", "emoji": "📺", "factores_disponibles": ["momento", "ciudad", "estacionalidad"] }
   ],
   "win": [
     { "id": "fitness", "nombre": "Fitness", "emoji": "💪", "factores_disponibles": ["momento", "ciudad"] },
@@ -57,6 +57,7 @@
     { "id": "antes", "nombre": "Campaña Anterior", "emoji": "⏮️", "factores_disponibles": "ninguno" }
   ]
 }
+
 
 
 
