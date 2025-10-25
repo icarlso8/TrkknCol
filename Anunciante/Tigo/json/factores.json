@@ -6,8 +6,13 @@
   { "id": "ciudad", "nombre": "Ciudad", "emoji": "🏙️", "tipo": "checkbox",
    "opciones": [ { "id": "bogota", "nombre": "Bogotá D.C.", "emoji": "🏛️" }, { "id": "medellin", "nombre": "Medellín", "emoji": "🚇" }, { "id": "cali", "nombre": "Cali", "emoji": "💃" }, { "id": "cartagena", "nombre": "Cartagena", "emoji": "🏖️" } ],
     "tamanos_disponibles": ["300x250", "728x90", "300x600", "320x480", "160x600", "320x50", "300x50"] },
-  
+
+  { "id": "estacionalidad", "nombre": "Estacionalidad", "emoji": "📅", "tipo": "checkbox",
+   "opciones": [ { "id": "dia", "nombre": "Día", "emoji": "🌞" }, { "id": "noche", "nombre": "Noche", "emoji": "🌙" } ],
+    "tamanos_disponibles": ["300x250", "728x90", "300x600", "320x480", "160x600", "320x50", "300x50"] },
+
   { "id": "ninguno", "nombre": "Ninguno", "emoji": "❌", "tipo": "checkbox",
    "opciones": [ { "id": "na", "nombre": "N/A", "emoji": "❌" } ],
-    "tamanos_disponibles": ["300x250", "728x90", "300x600", "320x480", "160x600", "320x50", "300x50"] }
+    "tamanos_disponibles": ["300x250", "728x90", "300x600", "320x480", "160x600", "320x50", "300x50"] }  
 ]
+
