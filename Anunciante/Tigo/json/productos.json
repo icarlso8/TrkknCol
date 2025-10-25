@@ -3,7 +3,7 @@
     "premium": [
       { "id": "hbomax", "nombre": "🎥 HBO Max" },
       { "id": "win", "nombre": "⚽ WIN +" },
-      { "id": "disneyplus", "nombre": "🎬 Disney+" },
+      { "id": "disneyplus", "nombre": "🎬 Disney +" },
       { "id": "anteriorpremium", "nombre": "⏮️ Repositorio Línea de Negocio Premium" }
     ]
   },
@@ -19,3 +19,4 @@
     ]
   }
 }
+
