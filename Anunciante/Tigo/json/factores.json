@@ -11,8 +11,9 @@
    "opciones": [ { "id": "navidad", "nombre": "Navidad", "emoji": "🎄" }, { "id": "turismo", "nombre": "Turismo", "emoji": "🧳" } ],
     "tamanos_disponibles": ["300x250", "728x90", "300x600", "320x480", "160x600", "320x50", "300x50"] },
 
-  { "id": "ninguno", "nombre": "Ninguno", "emoji": "❌", "tipo": "none",
+  { "id": "ninguno", "nombre": "Ninguno", "emoji": "❌", "tipo": "checkbox",
    "opciones": [ { "id": "na", "nombre": "N/A", "emoji": "❌" } ],
     "tamanos_disponibles": ["300x250", "728x90", "300x600", "320x480", "160x600", "320x50", "300x50"] }
 ]
+
 
