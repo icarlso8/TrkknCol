@@ -10,8 +10,8 @@
         { "id": "hbo_c2", "nombre": "📣 Estacional: HBO Max Campaña 2 (🚀Branding)" }
       ],
       "win": [
-        { "id": "win_c1", "nombre": "📣 Tácticas/Data-Driven: ⚽ Win + Campaña 1 (❤️Engagement)" },
-        { "id": "win_c2", "nombre": "📣 Tácticas/Data-Driven: ⚽ Win + Campaña 2 (❤️Engagement)" }
+        { "id": "win_c1", "nombre": "📣 Tácticas/Data-Driven: ⚽ Win+ Campaña 1 (❤️Engagement)" },
+        { "id": "win_c2", "nombre": "📣 Tácticas/Data-Driven: ⚽ Win+ Campaña 2 (❤️Engagement)" }
       ],
        "anteriorpremium": [
         { "id": "anteriorpremium_c1", "nombre": "📣 Permanente: ⏮️ Premium Anterior Campaña 1 (🎯Performance)" },
@@ -46,3 +46,4 @@
     }
   }
 }
+
